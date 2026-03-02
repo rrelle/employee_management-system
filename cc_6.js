@@ -29,4 +29,13 @@ class company {
         this.employees.push(employee);
         console.log(`${employee.name} has been added to the company.`);
     }
-    
+
+    listEmployees() {
+        console.log(`-Employee List-`);
+        this.employees.forEach(employee => {
+            console.log(employee.describe());
+        });
+    }
+}
+
+

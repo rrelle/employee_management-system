@@ -9,3 +9,10 @@ class Employee {
     }
 }
  
+
+class manager extends Employee {
+    constructor(name, department, teamsize) {
+        super(name, department);
+        this.teamsize = teamsize;
+    }   
+    

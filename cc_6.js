@@ -1,5 +1,5 @@
 class Employee {
-    constructor(name, departtment) {
+    constructor(name, department) {
         this.name = name;
         this.department = department;
     }
@@ -38,4 +38,13 @@ class company {
     }
 }
 
+const myCompany = new company("Tech Solutions Inc.");
+const emp1 = new Employee("Rrelle", "Engineering");
+const emp2 = new Employee("Bob", "Marketing");
+const manager1 = new manager("Grace", "Engineering", 5);
 
+myCompany.addEmployee(emp1);
+myCompany.addEmployee(emp2);
+myCompany.addEmployee(manager1);
+
+myCompany.listEmployees();

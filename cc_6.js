@@ -31,7 +31,7 @@ class company {
     }
 
     listEmployees() {
-        console.log(`-Employee List-`);
+        console.log(`_Employee List_`);
         this.employees.forEach(employee => {
             console.log(employee.describe());
         });
